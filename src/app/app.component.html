@@ -1,5 +1,6 @@
-<body>
-	<table>
+<body >
+	
+	<table style="background-color:#bcc1e7">
 		<tr>
 			<td>
 				<table>
@@ -12,7 +13,7 @@
 			</td>
 			<td  width = 1%></td>
 			<td>
-				<table>
+				<table style="background-color:rgb(37, 228, 30);">
 					<tr>
 						<td>
 							<h1 align="center">Remote Diagnostics</h1>
@@ -23,11 +24,11 @@
 		</tr>
 		<tr height="10px"></tr>
 		<tr>
-			<td width="18%">
-				<table>
+			<td width="25px" height="10px">
+				<table border="1px" style="height:95%">
 					<tr>
-						<td width="15%"></td>
-						<td>
+						<td></td>
+						<td style="padding:10%;">
 							<button [ngClass]="[btnView1]"  (click)="showView1($event)">Dashboard</button>
 							<p></p>			
 							<button [ngClass]="[btnVehicleData]"  (click)="showViewVehicleData($event)">Vehicle Data</button>
@@ -43,6 +44,7 @@
 			</td>
 			<td  width = 1%></td>
 			<td>
+				<div>
 				<table>
 					<tr>
 						<td>
@@ -67,6 +69,7 @@
 						</td>
 					</tr>
 				</table>
+			</div>
 			</td>
 		</tr>
 	</table>

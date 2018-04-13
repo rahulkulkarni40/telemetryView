@@ -25,7 +25,7 @@ button{
 }
 
 div{
-	height : 275px;
+	height : 450px;
 	overflow-y: scroll;
 	border:2px solid grey;
 }

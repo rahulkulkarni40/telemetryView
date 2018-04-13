@@ -1,11 +1,13 @@
 table{
-  background-color:#bcc1e7;
+	background-color:#bcc1e7;
   border-spacing: 20px;
-  border:1px solid grey;
+  border:0px solid grey;
   width:100%;
-  height:100%;
+ height:100%;
 }
-
+body{
+	background-color:#bcc1e7;
+}
 h1{
 	color:#1f85d8;
 }
@@ -17,16 +19,16 @@ button{
 
 .btn-default {
   	color: #1f85d8;
-  	background-color: #e9e7fe;
+  	background-color: #11eca3;
 	height:60px;
 	width:150px;
 	border-radius: 3px;
 }
 
 .btn-clicked {
-	border: 3px solid #1f85d8;
-  	color: #1f85d8;
-  	background-color: #e9e7fe;
+	border: 3px solid #0ee64e;
+  	color: #1fd86c;
+  	background-color: #fcfcfc;
   	height:60px;
 	width:150px;
 	border-radius: 3px;
@@ -40,6 +42,6 @@ button{
 }
 
 div{
-	height:520px;
+	height: 100%;
 }
 

@@ -77,7 +77,7 @@ export class AppComponent {
           this.thingsboardDeviceData = res;
               console.log(this.thingsboardDeviceData);
               let tbDataKeys = Object.keys(this.thingsboardDeviceData);
-              this.dateTime = [];
+              
               tbDataKeys.forEach(key => {
                   console.log(key);
                   let value = this.thingsboardDeviceData[key];
@@ -102,7 +102,7 @@ export class AppComponent {
           this.thingsboardDeviceData = res;
               console.log(this.thingsboardDeviceData);
               let tbDataKeys = Object.keys(this.thingsboardDeviceData);
-              this.vehicleData = [];
+              
               tbDataKeys.forEach(key => {
                   console.log(key);
                   let value = this.thingsboardDeviceData[key];
@@ -129,7 +129,7 @@ export class AppComponent {
           this.thingsboardDeviceData = res;
               console.log(this.thingsboardDeviceData);
               let tbDataKeys = Object.keys(this.thingsboardDeviceData);
-              this.driverBehaviour = [];
+              
               tbDataKeys.forEach(key => {
                   console.log(key);
                   let value = this.thingsboardDeviceData[key];

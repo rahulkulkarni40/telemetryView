@@ -1,11 +1,11 @@
 table{
   table-layout: fixed;
   width:100%;
-  background-color:#bcc1e7;
+  background-color:#f4f5f7;
 }
 
 td{
-	border: 1px solid grey;
+	border: 0px solid grey;
 }
 
 h6{
@@ -15,5 +15,5 @@ h6{
 
 div{
 	height : 215px;
-	border:1px solid grey;
+	border:2px solid grey;
 }

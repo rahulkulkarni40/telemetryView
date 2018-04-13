@@ -17,6 +17,7 @@ parameters = "Vehicle_ECT," + "Bat_Volt_Sts," + "MIL_Status," + "No_Of_DTC_Prs";
 thingsboardDeviceData : any;
 
 vehicleHealth = [];
+vehicleHealth1 = [];
 
 interval :any;
 constructor(private http:HttpClient) {
@@ -34,14 +35,14 @@ constructor(private http:HttpClient) {
 }
 
 refreshData() {
-
+        this.vehicleHealth = [];
         let url = this.urlbase + this.parameters;
         this.http.get(url,{headers:{'Content-Type':'application/json','X-Authorization': this.authToken}})
         .subscribe(res => {
             this.thingsboardDeviceData = res;
                 console.log(this.thingsboardDeviceData);
                 let tbDataKeys = Object.keys(this.thingsboardDeviceData);
-                this.vehicleHealth = [];
+                
                 tbDataKeys.forEach(key => {
                     console.log(key);
                     let value = this.thingsboardDeviceData[key];
@@ -49,6 +50,7 @@ refreshData() {
                         console.log(val.value);
                         this.vehicleHealth.push({"key":key,"value":val.value});
                     });
+                    this.vehicleHealth1 = this.vehicleHealth;
                   });
             },
             err => {
