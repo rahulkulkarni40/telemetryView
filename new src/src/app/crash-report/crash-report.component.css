@@ -1,0 +1,13 @@
+table, th, td{
+	border: 1px solid grey;
+}
+
+td{
+	height:20px;
+}
+
+div{
+	height : 560px;
+	overflow-y: scroll;
+	border:1px solid grey;
+}

@@ -1,0 +1,25 @@
+<h3 align="center">Vehicle Data</h3>
+<div>
+<table  width="100%">
+<tr>
+	<th><b>Date</b></th>
+	<th><b>Time</b></th>
+	<th><b>Parameter</b></th>
+	<th><b>Value</b></th>
+</tr>
+<tr   *ngFor="let item of vehicleData">
+	<td>
+		<h6>{{dateTime[0].value}}</h6>
+	</td>
+	<td>
+		<h6>{{dateTime[1].value}}</h6>
+	</td>
+	<td>
+		<h6>{{item.key}}</h6>
+	</td>
+	<td>
+		<h6>{{item.value}}</h6>
+	</td>
+</tr>
+</table>
+</div>

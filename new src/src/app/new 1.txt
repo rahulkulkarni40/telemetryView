@@ -1,0 +1,27 @@
+command for fork:
+
+
+
+60789
+
+
+function getLocalTimeFromGMT(sTime){
+var mydate = new Date(sTime);
+dte.setTime( mydate.getTime() + mydate.getTimezoneOffset()*60*1000 );
+return mydate
+}
+
+
+
+
+
+function convertUTCDateToLocalDate(date) {
+    var newDate = new Date(date.getTime()+date.getTimezoneOffset()*60*1000);
+
+    var offset = date.getTimezoneOffset() / 60;
+    var hours = date.getHours();
+
+    newDate.setHours(hours - offset);
+
+    return newDate;   
+}

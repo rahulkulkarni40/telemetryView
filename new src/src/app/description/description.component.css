@@ -1,0 +1,17 @@
+table{
+  table-layout: fixed;
+  width:100%;
+  background-color:white;
+  border:0px solid grey;
+  height:250px;
+}
+
+td{
+	border: 0px solid grey;
+}
+
+
+h6{
+	align:left;
+	color :black;
+}

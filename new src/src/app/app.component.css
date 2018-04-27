@@ -1,0 +1,45 @@
+table{
+	background-color:blue;
+  border-spacing: 5px;
+  border:0px solid grey;
+  width:100%;
+ height:100%;
+}
+
+h1{
+	color:black;
+}
+
+button{
+	color : #fff7fb;
+	background-color:#800080;
+}
+
+.btn-default {
+  	color:rgb(141, 140, 140);
+  	background-color: rgb(231, 228, 228);
+	height:60px;
+	width:150px;
+	border-radius: 3px;
+}
+
+.btn-clicked {
+	border: 3px solid #0ee64e;
+  	color: black;
+  	background-color: rgb(231, 176, 74);
+  	height:60px;
+	width:150px;
+	border-radius: 3px;
+}
+
+.default{
+	background:blue;
+}
+.clicked{
+	background:yellow;
+}
+
+div{
+	height: 100%;
+}
+

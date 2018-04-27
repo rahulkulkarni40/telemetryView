@@ -1,0 +1,40 @@
+<table style="background-color:blue">
+	<tr>
+		<td  width = "1%"></td>
+		<td width="25%">
+			<div>
+				<table  width="100%">
+					<tr>
+						<td width="25%"></td>
+						<td>
+							<h5><b>Trouble Code(s)</b></h5>
+							<br>
+						</td>
+					</tr>
+					<tr  *ngFor="let pCode of pCodes">
+						<td width="25%"></td>
+						<td>
+							
+							<button  class="btn" [ngClass]="{'btn-add': !clicked, 'btn-remove': clicked}" (click)="showpcodeDetails($event)"  (click)="clicked = true">{{pCode}}</button>
+							<p></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td  width = "1%"></td>
+		<td>
+			<div>
+				<table width="100%">
+					<tr>
+						<td>
+							<h5 align="center"><b>DTC Number : {{selectedCode}}</b></h5>
+							<app-description [descSegments] = "troubleDescriptionSegments" [pCode] = "selectedCode"></app-description>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td  width = "1%"></td>
+	</tr>
+</table>
